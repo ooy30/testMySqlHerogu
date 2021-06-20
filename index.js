@@ -10,10 +10,10 @@ app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-   user :"root",
-   host :"localhost",
-   password :"Ooyeve30",
-   database: "new_schema",
+   user :"sql6420235",
+   host :"sql6.freemysqlhosting.net",
+   password :"dQlECxWFDU",
+   database: "sql6420235",
   insecureAuth : true
 
 },(err) =>{
@@ -21,7 +21,7 @@ const db = mysql.createConnection({
 })
 
 app.get('/db',(req,res) => {
-    db.query("SELECT * FROM new_schema.new_table",(err,result) => {
+    db.query("SELECT * FROM sql6420235.profile",(err,result) => {
         if(err){
             console.log(err);
         }else{
